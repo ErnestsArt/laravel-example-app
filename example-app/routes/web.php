@@ -8,3 +8,6 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/{post}', [PostController::class, 'show']);
+
+
